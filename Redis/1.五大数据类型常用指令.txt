@@ -1,0 +1,66 @@
+keys键操作
+            
+exists-----测试key是否存在
+del-----删除key
+type-----返回key的类型
+keys-----匹配满足的key
+rename------改key名
+dbsize-----当前数据库key的数量
+expire-----设置key过期时间
+ttl-----key剩余过期时间
+move-----将key移动到指定数据库
+flushdb-----删除当前数据库的所有key
+flushall-----删除所有数据库的key
+
+
+String键操作
+
+set-----设置单个key
+mset-----批量添加key
+mget-----批量获取
+incr-----key值+1
+decr-----key值-1
+incrby-----对key加指定值
+decrby-----对key减定值
+appeand-----在key值后追加
+substr-----截取字符串（包前包后）
+
+
+List类型操作
+
+lpush-----在list头部添加
+rpop-----批量添加
+llen-----（存在对应key返回长度，反之-1，类型不对应会报错）
+lrange-----在指定区间查找元素
+rpush-----删除尾部元素
+lpop-----删除头部元素
+ltrim-----截取list（保留）
+
+
+
+Set类型操作
+
+sadd-----添加set
+srem-----删除set中的指定元素
+smove set1 set2-----将元素从set1转移到set2
+scard-----返回set中元素的个数
+sismember-----判断元素是否在set中
+sinter set1 set2 set3...-----给所定set的交集
+sunion
+set1 set2 set3...-----给所定set的并集
+sdiff set1 set2 set3...-----给所定set的差集
+smembers-----返回set所对应的元素
+
+
+sorted set
+
+
+zadd-----添加
+zrem--删除
+zincrby （键 加值 元素） -----对set指定元素加值
+zrank-----返回元素下标（按‘权’从小到大排列）
+zrevrank-----返回元素下标（按‘权’从大到小排列）
+zrange-----返回集合，（按‘权’从小到大排列）
+zrevrange-----返回集合（按‘权’从大到小排列）
+zcard-----返回集合元素个数zscorde-----返回给定元素的‘权’
+zremrangebyrank-----删除集合指定区间的元素
